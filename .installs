@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+# Install HomeBrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Install zsh
+brew install zsh zsh-completions zsh-syntax-highlighting
+
+# Make default
+chsh -s $(which zsh)
+
+# Oh My Zsh
+# Copy settings
+cp resources/.zshrc ~/.zshrc
+
+# Install
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+
+# CocoaPods
+brew install cocoapods
+
+# Fastlane
+brew cask install fastlane
+
+# Fastlane badges - ImageMagick
+brew install imagemagick
+brew install librsvg
+
+# Bundler
+sudo gem install bundler
