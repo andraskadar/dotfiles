@@ -3,7 +3,10 @@
 # Install HomeBrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Install zsh
+# Make zsh default
+chsh -s `which zsh`
+
+# Install zsh tools
 brew install zsh-completions zsh-syntax-highlighting
 
 # Oh My Zsh
