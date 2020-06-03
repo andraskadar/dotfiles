@@ -18,14 +18,14 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 
 # CocoaPods
-brew install cocoapods
+#brew install cocoapods
 
 # Fastlane
-brew cask install fastlane
+#brew cask install fastlane
 
 # Fastlane badges - ImageMagick
-brew install imagemagick
-brew install librsvg
+#brew install imagemagick
+#brew install librsvg
 
 # Bundler
 sudo gem install bundler
